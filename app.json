@@ -1,7 +1,11 @@
 {
   "expo": {
     "name": "todoList",
-    "slug": "todoList",
+    "slug": "todoListapp",
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -17,10 +21,10 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true
-    },
+    "ios": {},
     "android": {
+      "package": "com.tomasfv.todoListapp",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
@@ -28,6 +32,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4d741ad3-3cff-4c12-93dc-e575020e77c2"
+      }
     }
   }
 }
